@@ -10,6 +10,11 @@ Ni ska skriva några olika matematiska funktioner: `halve`, `add`, `subtract`, `
 * `square` **tar ett tal som argument**, och **returnerar** kvadraten av talet
 * `square_of_square_root` **tar ett tal som argument** och **returnerar** kvadraten av kvadratroten av talet
 
+### Flödesschema ###
+
+Skapa ett flödesschema för varje funktion
+Testa flödesschemat med penna och papper
+
 ### Exempel ###
 ```ruby
 	< halve(value: 4) #=> 2
@@ -31,7 +36,10 @@ Ni ska skriva några olika matematiska funktioner: `halve`, `add`, `subtract`, `
 	< square_of_square_root(value: 256) #=> 256
 ```
 
-### Flödesschema ###
+### Bonusbana ###
 
-Skapa ett flödesschema för varje funktion
-Testa flödesschemat med penna och papper
+### Bonusbana ###
+
+Vad händer om funktionerna får en `String` som input istället för en `Integer`?
+
+Uppdatera funktionerna så de hanterar felaktig input. 
