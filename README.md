@@ -38,8 +38,6 @@ Testa flödesschemat med penna och papper
 
 ### Bonusbana ###
 
-### Bonusbana ###
-
 Vad händer om funktionerna får en `String` som input istället för en `Integer`?
 
 Uppdatera funktionerna så de hanterar felaktig input. 
