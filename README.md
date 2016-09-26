@@ -8,7 +8,14 @@ Ni ska skriva några olika matematiska funktioner: `halve`, `add`, `subtract`, `
 * `subtract` tar två termer (`term1:` & `term2:`) **som argument**, och **returnerar** differensen
 * `multiply` tar två faktorer (`factor1:` & `factor2:`) **som argument** och **returnerar** produkten
 * `square` tar ett tal (`value:`) **som argument**, och **returnerar** kvadraten av talet
-* `square_of_square_root` tar ett tal (`value:`) **som argument** och **returnerar** kvadraten av kvadratroten av talet
+
+Bonusbana:
+
+* `square_of_square_root` tar ett tal (`value:`) **som argument** och **returnerar** kvadraten av kvadratroten av talet. Funktionen måste använda (anropa) square-funktionen ni skapade tidigare
+
+
+
+
 
 Alla funktionerna ska ligga i samma fil (`lib/maths_helpers.rb`)
 
