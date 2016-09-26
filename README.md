@@ -3,12 +3,14 @@
 
 Ni ska skriva några olika matematiska funktioner: `halve`, `add`, `subtract`, `multiply`, `square` och `square_of_square_root`
 
-* `halve` **tar ett tal som argument**, och **returnerar** det halverade talet
-* `add` **tar *två* termer som argument**, adderar de två talen, och **returnerar** summan
-* `subtract` **tar *två* termer som argument**, och **returnerar** differensen
-* `multiply` **tar *två* faktorer som argument** och **returnerar** produkten
-* `square` **tar ett tal som argument**, och **returnerar** kvadraten av talet
-* `square_of_square_root` **tar ett tal som argument** och **returnerar** kvadraten av kvadratroten av talet
+* `halve` tar ett tal (`value:`) **som argument**, och **returnerar** det halverade talet
+* `add` tar två termer (`term1:` & `term2:`)  **som argument**, adderar de två talen, och **returnerar** summan
+* `subtract` tar två termer (`term1:` & `term2:`) **som argument**, och **returnerar** differensen
+* `multiply` tar två faktorer (`factor1:` & `factor2:`) **som argument** och **returnerar** produkten
+* `square` tar ett tal (`value:`) **som argument**, och **returnerar** kvadraten av talet
+* `square_of_square_root` tar ett tal (`value:`) **som argument** och **returnerar** kvadraten av kvadratroten av talet
+
+Alla funktionerna ska ligga i samma fil (`lib/maths_helpers.rb`)
 
 ### Flödesschema ###
 
@@ -35,6 +37,18 @@ Testa flödesschemat med penna och papper
 	< square_of_square_root(value: 4) #=> 4
 	< square_of_square_root(value: 256) #=> 256
 ```
+
+### Test ###
+
+Kör `bundle install` i projektets rotmapp för att installera alla bibliotek.
+
+Testerna finns i `test/test_funktionens_namn`.
+
+Kör testerna (från uppgiftens rotmapp): `ruby test/test_funktionens_namn.rb` 
+
+Exempelvis `ruby test/test_multiply.rb`
+
+För att köra alla testerna: `rake test`
 
 ### Bonusbana ###
 
