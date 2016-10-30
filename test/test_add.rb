@@ -1,6 +1,7 @@
 require 'minitest'
 require 'minitest/autorun'
 require 'minitest/reporters'
+require 'has_keyword_argument'
 require_relative '../lib/maths_helpers.rb'
 
 Minitest::Reporters.use! [Minitest::Reporters::SpecReporter.new]
@@ -12,6 +13,7 @@ describe 'add' do
     proc{ add(12)     }.must_raise ArgumentError
     proc{ add(12, 4)  }.must_raise ArgumentError
 
+    :add.has_keyword_argument? :term1, :term2
   end
 
   it 'returns the sum of the terms' do

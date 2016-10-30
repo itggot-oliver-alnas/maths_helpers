@@ -1,6 +1,7 @@
 require 'minitest'
 require 'minitest/autorun'
 require 'minitest/reporters'
+require 'has_keyword_argument'
 require_relative '../lib/maths_helpers.rb'
 
 Minitest::Reporters.use! [Minitest::Reporters::SpecReporter.new]
@@ -10,6 +11,8 @@ describe 'square' do
   it 'takes value as a keyword argument' do
     proc{ square()   }.must_raise ArgumentError
     proc{ square(12) }.must_raise ArgumentError
+
+    :square.has_keyword_argument? :value
   end
 
   it 'returns the square of the value' do
