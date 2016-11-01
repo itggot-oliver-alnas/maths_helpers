@@ -1,6 +1,7 @@
 require 'minitest'
 require 'minitest/autorun'
 require 'minitest/reporters'
+require 'has_keyword_argument'
 require_relative '../lib/maths_helpers.rb'
 
 Minitest::Reporters.use! [Minitest::Reporters::SpecReporter.new]
@@ -9,6 +10,8 @@ describe 'halve' do
 
   it 'takes value as a keyword argument' do
     proc{ halve(12) }.must_raise ArgumentError
+
+    :halve.has_keyword_argument? :value
   end
 
   it 'returns the halved values of even numbers' do

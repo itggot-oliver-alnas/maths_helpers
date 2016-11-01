@@ -2,6 +2,7 @@ require 'minitest'
 require 'minitest/autorun'
 require 'minitest/reporters'
 require 'mocha/mini_test'
+require 'has_keyword_argument'
 
 require_relative '../lib/maths_helpers.rb'
 
@@ -12,6 +13,8 @@ describe 'square_of_square_root' do
   it 'takes value as a keyword argument' do
     proc{ square_of_square_root()   }.must_raise ArgumentError
     proc{ square_of_square_root(12) }.must_raise ArgumentError
+
+    :square_of_square_root.has_keyword_argument? :value
   end
 
   it 'returns the square of the square-root of the value' do

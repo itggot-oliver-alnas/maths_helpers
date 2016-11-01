@@ -1,6 +1,7 @@
 require 'minitest'
 require 'minitest/autorun'
 require 'minitest/reporters'
+require 'has_keyword_argument'
 require_relative '../lib/maths_helpers.rb'
 
 Minitest::Reporters.use! [Minitest::Reporters::SpecReporter.new]
@@ -11,6 +12,8 @@ describe 'multiply' do
     proc{ multiply()      }.must_raise ArgumentError
     proc{ multiply(12)    }.must_raise ArgumentError
     proc{ multiply(12, 4) }.must_raise ArgumentError
+
+    :multiply.has_keyword_argument? :factor1, :factor2
   end
 
   it 'returns the product of the factors' do
