@@ -1,28 +1,20 @@
 # maths_helpers
 ## Uppgiftsbeskrivning ##
 
-Ni ska skriva några olika matematiska funktioner: `halve`, `add`, `subtract`, `multiply`, `square` och `square_of_square_root`
+Ni ska skriva några olika matematiska funktioner: `halve`, `add`, `subtract`, `multiply` och `square`.
 
-* `halve` tar ett tal (`value:`) **som argument**, och **returnerar** det halverade talet
-* `add` tar två termer (`term1:` & `term2:`)  **som argument**, adderar de två talen, och **returnerar** summan
-* `subtract` tar två termer (`term1:` & `term2:`) **som argument**, och **returnerar** differensen
-* `multiply` tar två faktorer (`factor1:` & `factor2:`) **som argument** och **returnerar** produkten
-* `square` tar ett tal (`value:`) **som argument**, och **returnerar** kvadraten av talet
-
-Bonusbana:
-
-* `square_of_square_root` tar ett tal (`value:`) **som argument** och **returnerar** kvadraten av kvadratroten av talet. Funktionen måste använda (anropa) square-funktionen ni skapade tidigare
-
-
-
-
+* `halve` tar ett tal (`value:`) **som argument**, och **returnerar** det halverade talet.
+* `add` tar två termer (`term1:` & `term2:`)  **som argument**, adderar de två talen, och **returnerar** summan.
+* `subtract` tar två termer (`term1:` & `term2:`) **som argument**, och **returnerar** differensen.
+* `multiply` tar två faktorer (`factor1:` & `factor2:`) **som argument** och **returnerar** produkten.
+* `square` tar ett tal (`value:`) **som argument**, och **returnerar** kvadraten av talet.
 
 Alla funktionerna ska ligga i samma fil (`lib/maths_helpers.rb`)
 
 ### Flödesschema ###
 
-Skapa ett flödesschema för varje funktion
-Testa flödesschemat med penna och papper
+Skapa ett flödesschema för varje funktion.
+Testa flödesschemat med penna och papper.
 
 ### Exempel ###
 ```ruby
@@ -41,8 +33,6 @@ Testa flödesschemat med penna och papper
 	< square(value: 4) #=> 16
 	< square(value: 16) #=> 256
 
-	< square_of_square_root(value: 4) #=> 4
-	< square_of_square_root(value: 256) #=> 256
 ```
 
 ### Test ###
